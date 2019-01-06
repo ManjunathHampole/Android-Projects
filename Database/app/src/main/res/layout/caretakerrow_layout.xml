@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="75dp">
+
+    <TextView
+        android:layout_height="match_parent"
+        android:layout_width="120dp"
+        android:id="@+id/tx_emp"
+        android:layout_alignParentLeft="True"
+        android:text="Emp Id"
+        android:gravity="center"
+        android:textAppearance="?android:textAppearanceLarge"
+        />
+
+    <TextView
+        android:layout_height="match_parent"
+        android:layout_width="120dp"
+        android:id="@+id/tx_cage"
+        android:layout_toRightOf="@+id/tx_emp"
+        android:text="Cage Id"
+        android:gravity="center"
+        android:textAppearance="?android:textAppearanceLarge"
+        />
+
+    <TextView
+        android:layout_height="match_parent"
+        android:layout_width="120dp"
+        android:id="@+id/tx_doc"
+        android:layout_toRightOf="@+id/tx_cage"
+        android:text="Doc Id"
+        android:gravity="center"
+        android:textAppearance="?android:textAppearanceLarge"
+        />
+
+</RelativeLayout>

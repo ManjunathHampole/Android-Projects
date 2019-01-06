@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="com.example.manjunathhampole.database.employees"
+    tools:showIn="@layout/activity_employees">
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Get Employees"
+        android:id="@+id/employee1"
+        android:onClick="getemployee"
+        android:layout_marginTop="29dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="View in List"
+        android:id="@+id/employee2"
+        android:onClick="employeeinlist"
+        android:layout_marginTop="41dp"
+        android:layout_below="@+id/employee1"
+        android:layout_alignRight="@+id/employee1"
+        android:layout_alignEnd="@+id/employee1"
+        android:layout_alignLeft="@+id/employee1"
+        android:layout_alignStart="@+id/employee1" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Employees in JSON format"
+        android:id="@+id/employeejson"
+        android:layout_below="@+id/employee2"
+        android:layout_marginTop="33dp"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:focusableInTouchMode="true" />
+</RelativeLayout>
